@@ -1,0 +1,33 @@
+<% if !flash[:notice].blank? %>
+   <div class = "alert alert-info">
+      <%= flash[:notice] %>
+   </div>
+<% end %>
+
+<% if user_signed_in? %>
+<%= link_to "Новий файл", new_plan_path, class: "btn btn-primary" %>
+<% end %>
+</br> </br>
+<table class = "table table-bordered table-striped">
+   <thead>
+      <tr class="bg-info">
+      <th>Назва</th>
+      <th>Переглянути чи скачати</th>
+       <th> </th>
+      </tr>
+   </thead>
+   
+   <tbody>
+      <% @plans.each do |plan| %>
+         <tr>
+            <td><%= plan.name %></td>
+            <td><%= link_to "Відкрити файл", plan.attachment_url %></td>
+            <% if user_signed_in? %>
+            <td><%= button_to "Delete",  plan, method: :delete, class: "btn btn-danger", confirm: "Точно видалити #{plan.name}?" %></td>
+         </tr>
+         <% end %>
+      <% end %>
+   </tbody>
+</table>
+</div>
+

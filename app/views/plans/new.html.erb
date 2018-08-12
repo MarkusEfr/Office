@@ -1,0 +1,23 @@
+<% if !@plan.errors.empty? %>
+   <div class = "alert alert-error">
+      
+      <ul>
+         <% @plan.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+         <% end %>
+      </ul>
+      
+   </div>
+<% end %>
+
+<div class = "well">
+   <%= form_for @plan, html: { multipart: true } do |f| %>
+      <%= f.label :Назва %>
+      <%= f.text_field :name %>
+</br>
+      <%= f.label :Файл %>
+      <%= f.file_field :attachment %>
+</br>
+      <%= f.submit "Save", class: "btn btn-primary" %>
+   <% end %>
+</div>
