@@ -9,7 +9,7 @@ development:
 production:
   adapter: postgresql
   encoding: utf8
-  database: train
+  database: Office_production
   pool: 5
-  username: train   
+  username: deploy
   password: secret
