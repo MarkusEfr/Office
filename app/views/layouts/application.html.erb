@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html>
-   
    <head>
       <title>Teacher office</title>
       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <%= csrf_meta_tags %>
-   </head>
-
+   </head> 
   <body class="bg-light">
 <% if user_signed_in? %>
-<%= link_to 'Вихiд', destroy_user_session_path, method: :delete %>
+<%= button_to "Вихiд", destroy_user_session_path, method: :delete %>
 <% end %>
        <p class="text-center text-info"><%= alert %></p>
    <div class="jumbotron text-center">
   <%= image_tag ("kkmg.png"), width: '100%' %>
   <h3>Особистий кабінет педагога КОНДРАТЬЄВА АНАТОЛІЯ ІЛЛІЧА, викладача електротехніки та електроніки.</h3>
 </div>
-
 <div class="row">
 <div class="col-md-4">
   <a href="/home/osvita" type="button" class="btn btn-primary btn-md btn-block">Моя освіта</a>
   <a href="/home/zdobutky" type="button" class="btn btn-primary btn-md btn-block">Особисті здобутки</a>
   <a href="/home/classy" type="button" class="btn btn-primary btn-md btn-block">Лабораторії коледжу</a>
  <a href="/resumes#index" type="button" class="btn btn-primary btn-md btn-block">Навчальні програми</a>
- <a href="/plans#index" type="button" class="btn btn-primary btn-md btn-block">Плани</a>
+ <a href="/plans#index" type="button" class="btn btn-primary btn-md btn-block">Навчальнi роботи</a>
+</div>
+<div class="col-sm-1">
 </div> 
-<div class="col-md-8">
+<div class="col-md-6">
     <%= yield %>
 </div>
 </div>
