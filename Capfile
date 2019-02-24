@@ -10,7 +10,6 @@ require 'capistrano/passenger'
 # If you are using rbenv add these lines:
  require 'capistrano/rbenv'
  set :rbenv_type, :user
- set :rbenv_path, '/home/deploy/.rbenv/'
 
 # Load the SCM plugin appropriate to your project:
 #

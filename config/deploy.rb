@@ -9,7 +9,6 @@ set :repo_url, "https://github.com/MarkusEfr/Office.git"
 
 # Default deploy_to directory is /var/www/my_app_name
  set :deploy_to, "/home/deploy/Office"
- set :rbenv_path, '/home/deploy/.rbenv/'
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
