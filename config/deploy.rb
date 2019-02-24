@@ -6,7 +6,7 @@ set :repo_url, "https://github.com/MarkusEfr/Office.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-set :rbenv_path, "/usr/bin/rbenv"
+set :rbenv_path, "/usr"
 # Default deploy_to directory is /var/www/my_app_name
  set :deploy_to, "/home/deploy/Office"
 # Default value for :format is :airbrussh.
