@@ -1,12 +1,11 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
-
+# Default branch is :master
+# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 set :application, "Office"
 set :repo_url, "https://github.com/MarkusEfr/Office.git"
 
-# Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
- set :rbenv_path, '/usr'
+ set :rvm_path, '/.rvm/bin/rvm'
 # Default deploy_to directory is /var/www/my_app_name
  set :deploy_to, "/home/deploy/Office"
 # Default value for :format is :airbrussh.
