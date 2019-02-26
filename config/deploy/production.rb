@@ -8,9 +8,7 @@
  server "104.248.90.188", user: "deploy", roles: %w{app db web}
 
 Rails.application.configure do
-    ...
     config.secret_key_base = ENV["SECRET_KEY_BASE"]
-    ...
 end
 
 # role-based syntax
