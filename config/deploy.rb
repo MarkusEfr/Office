@@ -21,7 +21,7 @@ set :repo_url, "https://github.com/MarkusEfr/Office.git"
 # Default value for :linked_files is []
 
 # Default value for linked_dirs is []
- append :linked_dirs, "log", "tmp/pids", "shared/config/master.key", "tmp/cache",
+ append :linked_dirs, "log", "tmp/pids", "config/master.key", "tmp/cache",
  "tmp/sockets", "public/system"
 
 # Default value for default_env is {}
