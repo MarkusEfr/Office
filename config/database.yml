@@ -9,7 +9,7 @@ development:
 production:
   adapter: postgresql
   encoding: utf8
-  database: Office_production
+  database: office
   pool: 5
   username: deploy
   password: secret
