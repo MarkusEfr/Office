@@ -59,6 +59,7 @@ gem 'capistrano-rails', '~> 1.2'
 gem 'capistrano-passenger', '~> 0.2.0'
 gem 'capistrano-bundler'
 gem 'capistrano-rvm'
+gem 'capistrano3-puma'
 # Add this if you're using rbenv
 # gem 'capistrano-rbenv', '~> 2.1'
 group :test do
