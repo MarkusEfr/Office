@@ -1,1 +1,1 @@
-You can chech this code, run server or deploy for your teacher :D
+You can check this code, run server or deploy for your teacher :D
